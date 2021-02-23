@@ -56,7 +56,7 @@ public class JarJarURLConnection extends URLConnection {
         final String file = url.getFile();
         URL inner = new URL(file);
 
-        System.out.println("url for connection: " + url);
+        System.out.println("url for connection: " + inner);
         connection = inner.openConnection();
     }
 
